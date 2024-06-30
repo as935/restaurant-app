@@ -29,6 +29,7 @@ function LoginPage() {
 
       const data = await response.json();
       localStorage.setItem('accessToken', data.accessToken);
+      
       navigate('/menu');
     } catch (error) {
       console.error('Error:', error.message);

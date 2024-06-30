@@ -8,7 +8,7 @@ function MenuPage() {
   const [menuItems, setMenuItems] = useState([]);
   const {addToCart} = useCart();
   const navigate = useNavigate();
-
+  console.log(localStorage.getItem('accessToken'));
   useEffect(() => {
     // Fetch menu items from the backend API
     fetch('http://localhost:5000/api/menu')
